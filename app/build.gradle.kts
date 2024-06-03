@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
-    namespace = "com.blessingmwiti.kotlinwebview"
+    namespace = "com.sawititech.baselland"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.blessingmwiti.kotlinwebview"
+        applicationId = "com.sawititech.baselland"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -34,6 +35,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        dataBinding = true
         compose = true
         viewBinding = true
     }

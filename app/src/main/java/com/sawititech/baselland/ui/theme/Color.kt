@@ -1,4 +1,4 @@
-package com.blessingmwiti.kotlinwebview.ui.theme
+package com.sawititech.baselland.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
