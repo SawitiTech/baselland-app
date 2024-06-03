@@ -65,6 +65,15 @@ class WebViewActivity : AppCompatActivity() {
             }
         }
     }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        if (binding.webview.canGoBack()) {
+            binding.webview.goBack()
+        } else {
+            super.onBackPressed()
+        }
+    }
 }
 
 
